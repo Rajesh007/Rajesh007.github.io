@@ -51,7 +51,14 @@
     latlng = [lng,lat];
     console.log('User location : ',latlng);
     marker.setLngLat(latlng).addTo(map)
+    flyToStore(latlng)
   }
+	
+   function flyToStore(latlng) {
+    map.flyTo({
+        center: [latlng[0], latlng[1]],
+        zoom: 15
+      });
  	
 </script>
 
