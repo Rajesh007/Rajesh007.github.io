@@ -51,23 +51,8 @@
     latlng = [lng,lat];
     console.log('User location : ',latlng);
     marker.setLngLat(latlng).addTo(map)
-    coordinateFeature(lng, lat);
   }
-  
-  function coordinateFeature(lng, lat) {
-    return {
-      center: [lng, lat],
-      geometry: {
-        type: 'Point',
-        coordinates: [lng, lat]
-      },
-      place_name: 'Lat: ' + lat + ' Lng: ' + lng,
-      place_type: ['coordinate'],
-      properties: {},
-      type: 'Feature'
-    };
-  }
-	
+ 	
 </script>
 
 </body>
